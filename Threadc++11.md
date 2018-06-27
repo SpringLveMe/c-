@@ -68,3 +68,12 @@ int main()
 
 
 ```
+
+
+
+##### 让出时间片,避免线程变成 while(1)这种
+- 原始的处理方式是用clock_t 加 Sleep(20);
+```
+std::this_thread::yield() ;
+
+```
