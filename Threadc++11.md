@@ -109,3 +109,15 @@ int main(int argc, char *argv[]) {
 }
 
 ```
+
+
+##### = defaule
+- 有时候我们重载了构造函数，但是又需要默认构造函数
+```
+struct Point {
+    Point()=default;
+    Point(int _x, int _y) : x(_x), y(_y) {}
+    int x = 0;
+    int y = 0;
+}
+```
